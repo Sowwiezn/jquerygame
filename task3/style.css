@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #EAEEE1;
+}
+.container{
+/*	margin: 0 auto;*/
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
+	align-content: start;
+	/*grid-template-rows: 700px;*/
+	height: 100vh;
+}
+.header{
+	height: 200px;
+}
+.bttn{
+	width: 700px;
+	height: 30px;
+	background: #B0D068;
+	color: black;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding-top: 10px;
+	padding-left: 5px;
+}
+.rules{
+	background: #C9DB9F;
+	width: 685px;
+	color: black;
+	padding: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.textHeader{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+h2{
+	padding-bottom: 20px;
+}
+.main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+/*	justify-content: center;*/
+}
+.p1{
+	align-self: center;
+}
+.textp1{
+	padding: 10px;
+}
+.p2{
+	align-self: center;
+}
+.start{
+	margin-top: 30px;
+	height: 50px;
+	width: 100px;
+	background: #B0D068;
+	display: flex;
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+	font-size: 21px;
+}
+.gameBoard{
+	margin-top: 30px;
+	display: grid;
+	gap: 5px;
+	width: 100%;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(4, 100px);
+}
+.gameBoard > div {
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    transition: all 0.5s;
+    transform-style: preserve-3d;
+}
+
+.front {
+    background-color: #22577A;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.back {
+    background-color: #ffffff;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.back img{
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+	max-height: 100%;
+}
+.flip{
+	transform: rotateY(180deg);
+}
