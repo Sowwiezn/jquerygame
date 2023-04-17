@@ -1,0 +1,66 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: black;
+	font-family: 'Press Start 2P', cursive;
+}
+.container{
+	border: 4px solid;	
+	animation: colorBorder 8s infinite;
+	height: 98.4vh;
+	padding: 2px;
+}
+.container2{
+	border: 4px solid;
+	animation: colorBorder 9s infinite;
+	height: 97.4vh;	
+}
+.header{
+	width: 100%;
+	height: 200px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	font-size: 50px;
+	margin-top: 30px;
+}
+.start{
+    width: 100%;
+    position: fixed;
+    margin: 0 auto;
+    top: 50%;
+    padding: 10px;
+    text-align: center;
+	animation: bounceInLeft;
+	animation-duration: 3s;
+}
+#textStart{
+	color: white;
+	text-decoration: none;
+	font-size: 60px;
+	animation: colorAnim 3s infinite;
+	transition: all ease-in-out .5s;
+	font-weight: 900;
+}
+@keyframes colorAnim{
+	0% {color: #0000A0;}
+	25% {color: #A00000;}
+	50% {color: #00A000;}
+	75% {color: #00A0A0;}
+	85% {color: #A000A0;}
+	100% {color: #A0A000;}
+}
+@keyframes colorBorder{
+	0% {border-color: #0000A0;}
+	25% {border-color: #A00000;}
+	50% {border-color: #00A000;}
+	75% {border-color: #00A0A0;}
+	85% {border-color: #A000A0;}
+	100% {border-color: #A0A000;}
+}
+#textStart:hover {
+	font-size: 75px;
+	text-shadow: 1px 4px 3px white;
+}
