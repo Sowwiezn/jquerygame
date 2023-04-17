@@ -1,0 +1,110 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #E8E7EE;
+}
+.container{
+/*	margin: 0 auto;*/
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 700px;
+	justify-items: center;
+	align-content: start;
+}
+.header{
+	height: 200px;
+}
+.bttn{
+	width: 700px;
+	height: 30px;
+	background: #A77AC4;
+	color: black;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding-top: 10px;
+	padding-left: 5px;
+}
+.rules{
+	background: #C9BED6;
+	width: 685px;
+	color: black;
+	padding: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.textHeader{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+h2{
+	padding-bottom: 20px;
+}
+.main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+/*	justify-content: center;*/
+}
+.p1{
+	align-self: center;
+}
+.textp1{
+	padding: 10px;
+}
+.p2{
+	align-self: center;
+}
+.start{
+	height: 50px;
+	width: 100px;
+	background: #C9BED6;
+	display: flex;
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+	font-size: 21px;
+}
+#next{
+	text-decoration: none;
+	display: none;
+}
+#next div{
+	margin-top: 50px;
+    width: 90px;
+    height: 40px;
+    background: #C9BED6;
+    border: none;
+    font-size: 17px;
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+    padding-top: 15px;
+    text-align: center;
+}
+.inp{
+    margin-top: 25px;
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    background: #E8E7EE;
+    font-size: 20px;
+}
+.bttn2{
+    height: 34px;
+    padding: 10px;
+    background: #A77AC4;
+    color: white;
+    border: none;
+}
+#melody{
+    margin-top: 50px;
+}
+.anw{
+    margin-top: 20px;
+}
+.sound{
+    display: none;
+}
