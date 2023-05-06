@@ -4,7 +4,7 @@ let time;
     if (timeStorage.getItem("timer") != null) {
         time = parseInt(timeStorage.getItem("timer"));
     } else {
-        time = 60;
+        time = 10;
         timeStorage.setItem("timer", time);
     }
 
